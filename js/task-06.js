@@ -1,6 +1,6 @@
 const input = document.getElementById("validation-input");
 
-input.addEventListener("blur", function (event) {
+input.addEventListener("blur", (event) => {
   const inputValue = event.target.value;
   const expectedLength = parseInt(event.target.getAttribute("data-length"));
   if (inputValue.length === expectedLength) {
